@@ -1,6 +1,10 @@
 #ifndef GLFWHCK_H
 #define GLFWHCK_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "GLFW/glfw3.h"
 
 typedef enum glfwhckEventType {
@@ -116,5 +120,9 @@ void glfwhckEventQueueFree(glfwhckEventQueue* queue);
 void glfwhckEventQueuePush(glfwhckEventQueue* queue, glfwhckEvent const* event);
 glfwhckEvent const* glfwhckEventQueuePop(glfwhckEventQueue* queue);
 int const glfwhckEventQueueEmpty(glfwhckEventQueue* queue);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
