@@ -80,7 +80,7 @@ glfwhckEvent const* glfwhckEventQueuePop(glfwhckEventQueue* queue)
   return &queue->buffer[oldPos];
 }
 
-int const glfwhckEventQueueEmpty(glfwhckEventQueue* queue)
+int glfwhckEventQueueEmpty(glfwhckEventQueue* queue)
 {
   return queue->bufferSize == 0 ? GL_TRUE : GL_FALSE;
 }

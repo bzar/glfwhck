@@ -119,7 +119,7 @@ glfwhckEventQueue* glfwhckEventQueueNew(GLFWwindow* window, int const eventTypes
 void glfwhckEventQueueFree(glfwhckEventQueue* queue);
 void glfwhckEventQueuePush(glfwhckEventQueue* queue, glfwhckEvent const* event);
 glfwhckEvent const* glfwhckEventQueuePop(glfwhckEventQueue* queue);
-int const glfwhckEventQueueEmpty(glfwhckEventQueue* queue);
+int glfwhckEventQueueEmpty(glfwhckEventQueue* queue);
 
 #ifdef __cplusplus
 }
