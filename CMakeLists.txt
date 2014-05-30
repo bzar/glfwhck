@@ -7,7 +7,7 @@ add_subdirectory(lib)
 
 include_directories(
   include
-  ${glfw_SOURCE_DIR}/include
+  ${GLFW_SOURCE_DIR}/include
 )
 
 file(GLOB SOURCES src/*.c)
